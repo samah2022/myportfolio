@@ -1,0 +1,433 @@
+body {
+ margin:-14px 0;
+}
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://www.pixel4k.com/wp-content/uploads/2018/10/alone-road-sun-4k_1540134802.jpg');
+  background-size: cover;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+}
+
+.background:after {
+  content: '';
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.5);
+  margin:-10px;
+  border: 5px double rgba(255,255,255,.2);
+}
+.wrapper {
+  display: none;
+}
+#about {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+.text-byline {
+  position: fixed;
+  top: 63%;
+  left: 10%;
+  color: white;
+  max-width: 26%;
+  opacity: 0;
+}
+/* 3. Explosion Keyframe
+--------------------------------------- */
+#descriptionAbout {
+  position: fixed;
+  width: 270px;
+  top: 63%;
+  right: 10%;
+  opacity: 0;
+  color:#fff;
+  z-index:10
+}
+@media(max-width:767px){
+  #contact-me h1{
+    left:20%
+  }
+}
+@media(max-width:992px){
+  #descriptionAbout p{
+    display:none
+  }
+  #descriptionAbout a{
+    top:138px;
+  }
+  .myname, #contact-me h1{
+    font-size:25px;
+  }
+}
+.animate h1{
+  margin: 163px -45px 0;
+  color:rgb(255, 217, 176,0.8)
+}
+.animate-contain {
+	height:40px;
+	overflow: hidden;
+	text-align: center;
+	margin-top: -100%;
+}
+.animated-text {
+	transition: 300ms all;
+	margin-top: 0;
+	animation: slide 2s infinite;
+}
+.animated-text span {
+	display: block;
+	font-size: 30px;
+  text-align:center;
+	padding:0 0 8px;
+  color:rgb(255, 217, 176);
+  line-height: 55px;
+}
+/* 3. Links Keyframe
+--------------------------------------- */
+#links {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+.links-byline {
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+/* 3. Links Keyframe
+--------------------------------------- */
+#links {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+.links-byline {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.btn-cv{
+  display: block;
+  border-radius: 100px;
+  padding: 10px;
+  margin:10px;
+  text-align: center;
+  text-decoration: 0;
+  color: #000;
+
+}
+.myname{
+  color:hsl(30,100%,65%);
+  font-size:50px;
+}
+.sunny{
+ border:1px solid rgb(255, 217, 176);
+color: rgb(255, 217, 176);
+text-shadow: 0 0 .5em rgb(255, 217, 176);
+position: relative;
+transition: all 0.3s;
+}
+.sunny:hover,.btn.sunny:focus:nth-child(1) {
+ color: rgb(52, 48, 47);
+ background-color: rgb(255, 217, 176);
+ box-shadow: 0 0 1em .25em rgb(255, 217, 176),
+        0 0 4em 2em rgba(255, 191, 123, 0.78),
+        inset 0 0 .75em .25em rgb(255, 217, 176);
+}
+
+@keyframes slide{
+	0%{margin-top:0;}
+	20%{margin-top:0;}
+	40%{margin-top:-40px;}
+	60%{margin-top:-40px;}
+	80%{margin-top:-80px;}
+	100%{margin-top:-80px;}
+}
+.txt{
+    word-break: break-word;
+    margin: 25px 0;
+}
+/* Start Skills Section*/
+#skills{
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+h2{opacity:0.8}
+.container {
+    height: 100vh;width:100vw;
+}
+h1 {
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  max-width: 30%;
+  opacity: 0;
+  color:#000
+}
+.animate{
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  max-width: 30%;
+  opacity: 0;
+  font-size:30px;
+  color:#fff
+}
+.frontEnd {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  max-width: 26%;
+  opacity: 0;
+}
+.backEnd {
+  position: fixed;
+  width: 270px;
+  top: 50%;
+  right: 15%;
+  opacity: 0;
+}
+@media(max-width:880px){
+  .frontEnd{
+    max-width:100%
+  }
+  .backEnd{
+    display:none
+  }
+}
+.d-grid-3{    
+  display: grid;
+  gap:10px;
+    grid-template-columns: 1fr 1fr 1fr
+}
+.progress {
+  display:block;
+    width: 150px;
+    height: 150px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 150px;
+    z-index:9;
+}
+@media(max-width:992px){
+  .progress {
+    width:100px;height:100px;font-size:4vmin
+  }
+}
+
+.progress::after {content: "%";}
+.tech{display: block;
+    position: absolute;
+    inset: -30px;
+    color: aqua;}
+.progress .title {position: relative;z-index: 100;}
+
+.progress .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+.progress .left, .progress .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid hsl(30,100%,65%);/*#0de2db*/
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right;
+}
+
+.progress .left {animation: load1 1s linear forwards;}
+
+.progress:nth-of-type(2) .right, .progress:nth-of-type(3) .right, .progress:nth-of-type(4) .right, .progress:nth-of-type(5) .right, .progress:nth-of-type(6) .right {animation: load2 .5s linear forwards 1s;}
+ 
+.progress:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+
+@keyframes load1 {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(180deg);}
+}
+
+@keyframes load2 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {z-index: 100;transform: rotate(270deg);}
+}
+
+@keyframes load3 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {
+        z-index: 100;transform: rotate(315deg);}
+}
+@keyframes load4 {
+  0% {z-index: 100;transform: rotate(180deg);}
+
+  100% {
+      z-index: 100;transform: rotate(205deg);}
+}
+
+/* End Skills Section*/
+/* Start Education and certif Section*/
+#certification h1{top:25%;left:40%;opacity:0}
+.certif{
+  position: fixed;
+  top: 155px;
+  left:-21px;
+  margin: 0 47vw;
+  z-index: 9;
+  opacity:0
+}
+.btn{
+  border-radius: 50%;
+    width: 100px;
+    height: 100px
+}
+.btn.sunny:hover:nth-child(2),.btn.sunny:focus:nth-child(2){
+  background-color: #06c3e9;
+    box-shadow: 0 0 1em 0.25em #06c3e9, 0 0 4em 2em rgb(6 195 233 / 78%), inset 0 0 0.75em 0.25em #06c3e9;
+}
+.btn.sunny:hover:nth-child(3),.btn.sunny:focus:nth-child(3){
+  background-color: #e906e8;
+    box-shadow: 0 0 1em 0.25em #e906e8, 0 0 4em 2em rgb(233 6 232 / 78%), inset 0 0 0.75em 0.25em #e906e8;
+}
+.btn.sunny:hover:nth-child(4),.btn.sunny:focus:nth-child(4){
+  background-color: #06c3e9;
+    box-shadow: 0 0 1em 0.25em #06c3e9, 0 0 4em 2em rgb(6 195 233 / 78%), inset 0 0 0.75em 0.25em #06c3e9;
+}
+.certif .btn:after{
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 4px;
+  background: #fff;
+  top: 99px;
+  left:48px
+}
+.certif .btn.mb-3{
+  margin-bottom:30px !important;
+}
+.popover{
+  border:0;background-color:rgba(0,0,0,0.3);
+}
+.custom-popover .popover-body{
+   color: #fff !important
+}
+/* End Education and certif Section*/
+/* Start Contact me Section*/
+#contact-me
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    position: fixed;
+    top: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact-me h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: #000;
+    left:35%;
+    top:55px;
+    max-width: 100%;
+}
+#contact-me p
+{
+    font-family:Poppins;
+    color: #fff;
+    font-style: italic;
+    margin-top: -60px;
+    font-size: 19px;
+    opacity:0
+}
+#contact-me #contact-links
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+#contact-me #contact-links a
+{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    font-family: Poppins;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.2s linear;
+}
+
+#contact-me #contact-links a:hover
+{
+    transform: translateY(10px);
+}
+
+#contact #contact-links a i
+{
+    margin-right:5px ;
+}
+
+/***************************footer******************************/
+
+#footer
+{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#footer p
+{
+    font-size: 18px;
+    font-family: Poppins;
+    text-transform: capitalize;
+    opacity:0
+}
+
+#footer p i
+{
+    color:red;
+}
+/* End Contact me Section*/
+
