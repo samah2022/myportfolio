@@ -287,7 +287,8 @@ h1 {
 
 .progress:nth-of-type(2) .right, .progress:nth-of-type(3) .right, .progress:nth-of-type(4) .right, .progress:nth-of-type(5) .right, .progress:nth-of-type(6) .right {animation: load2 .5s linear forwards 1s;}
  
-.progress:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+.progress:first-of-type .right {animation: load3 .8s linear forwards 1s}
+.progress#nodejs .right {animation: load4 .8s linear forwards 1s}
 
 @keyframes load1 {
     0% {transform: rotate(0deg);}
@@ -311,7 +312,7 @@ h1 {
   0% {z-index: 100;transform: rotate(180deg);}
 
   100% {
-      z-index: 100;transform: rotate(205deg);}
+      z-index: 100;transform: rotate(190deg);}
 }
 
 /* End Skills Section*/

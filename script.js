@@ -25,6 +25,10 @@ $("#linkContactMe").click(function() {
   $('html, body').animate({
       scrollTop:5000}, 50);
 });
+$("#DevelopedBy").click(function() {
+  $('html, body').animate({
+      scrollTop:5600}, 50);
+});
 (function() {
   $(function() {
 
