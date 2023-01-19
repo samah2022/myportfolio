@@ -51,19 +51,25 @@ body {
   z-index:10
 }
 @media(max-width:767px){
+  .navbar{bottom:0}
   #contact-me h1{
-    left:20%
+    left:20% !important;
+    font-size: 40px !important;
   }
 }
 @media(max-width:992px){
+  #about .text-byline{
+    display: none;
+  }
   #descriptionAbout p{
-    display:none
+    margin-top: 18%;
   }
   #descriptionAbout a{
     top:138px;
   }
   .myname, #contact-me h1{
     font-size:25px;
+    text-shadow: -1px 0 lavender;
   }
 }
 .animate h1{
@@ -160,6 +166,11 @@ transition: all 0.3s;
 .txt{
     word-break: break-word;
     margin: 25px 0;
+    font-size: 18px;
+}
+.txt span{
+  color:hsl(180,100%,50%);
+  text-shadow: -1px 0 lavender;
 }
 /* Start Skills Section*/
 #skills{
@@ -361,7 +372,7 @@ h1 {
     font-size: 60px;
     color: #000;
     left:35%;
-    top:55px;
+    top:22%;
     max-width: 100%;
 }
 #contact-me p
@@ -419,7 +430,7 @@ h1 {
 
 #footer p
 {
-    font-size: 18px;
+    font-size: 22px;
     font-family: Poppins;
     text-transform: capitalize;
     opacity:0
@@ -430,4 +441,64 @@ h1 {
     color:red;
 }
 /* End Contact me Section*/
+/*Star NavBar*/
+/* navbar styling */
+.navbar{
+  position: fixed;
+  bottom: 10%;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding: 15px 0;
+  background: hsl(30,100%,65%);
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span{
+  color: hsl(30,100%,65%);
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+  color: #fff;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover,.navbar .menu li a:active,.navbar .menu li a:focus{
+  color: hsl(30,100%,65%);
+}
+
+.navbar.sticky .menu li a:hover{
+  color: #fff;
+}
+
+/* menu btn styling */
+.menu-btn{
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+/*End NavBar*/
 

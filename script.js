@@ -3,6 +3,28 @@ $(document).ready( function(){
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 });
+/** Nav bar animation Scroll */
+$("#linkHomepage").click(function() {
+  $('html, body').animate({
+      scrollTop:0}, 10);
+});
+$("#linkAbout").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#about").offset().top
+  }, 20);
+});
+$("#linkSkills").click(function() {
+  $('html, body').animate({
+      scrollTop:2500}, 30);
+});
+$("#linkCertif").click(function() {
+  $('html, body').animate({
+      scrollTop:3800}, 50);
+});
+$("#linkContactMe").click(function() {
+  $('html, body').animate({
+      scrollTop:5000}, 50);
+});
 (function() {
   $(function() {
 
@@ -108,8 +130,8 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             'animations' :  [
               {
                 'selector'    : '#footer p',
-                'translateY'  : '-10%',
-                'opacity'     : [0, 1] // hack to accelrate opacity speed
+                'translateY'  : '-100%',
+                'opacity'     : [0, 1] 
               }]},{
             'wrapper' : '#links',
             'duration' : '100%',
