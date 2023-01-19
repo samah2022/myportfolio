@@ -27,7 +27,7 @@ $("#linkContactMe").click(function() {
 });
 $("#DevelopedBy").click(function() {
   $('html, body').animate({
-      scrollTop:5600}, 50);
+      scrollTop:5700}, 50);
 });
 (function() {
   $(function() {
