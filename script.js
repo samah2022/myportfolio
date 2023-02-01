@@ -142,7 +142,7 @@ $("#DevelopedBy").click(function() {
             'animations' :  [
               {
                 'selector'    : '#links',
-                'opacity'     : [0, 2],
+                'opacity'     : [0, .1],
                 'scale'       : [.8, 1]
               }
             ]
