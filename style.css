@@ -25,12 +25,13 @@ body {
 .wrapper {
   display: none;
 }
-#about {
+#about,#container-intro {
   position: fixed;
   top: 100%;
   width: 100%;
   height: 100%;
 }
+
 .text-byline {
   position: fixed;
   top: 63%;
@@ -38,6 +39,14 @@ body {
   color: white;
   max-width: 26%;
   opacity: 0;
+}
+.text-intro{
+  position: fixed;
+  top: 8%;
+  left: 30%;
+  color: white;
+ opacity: 0.5;
+ font-size: 1.2rem;
 }
 /* 3. Explosion Keyframe
 --------------------------------------- */
@@ -83,7 +92,6 @@ body {
   }
   .myname, #contact-me h1{
     font-size:25px;
-    text-shadow: -1px 0 lavender;
   }
 }
 .animate h1{

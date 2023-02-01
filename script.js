@@ -134,7 +134,7 @@ $("#DevelopedBy").click(function() {
             'animations' :  [
               {
                 'selector'    : '#footer p',
-                'translateY'  : '-100%',
+                'translateY'  : '-90%',
                 'opacity'     : [0, 1] 
               }]},{
             'wrapper' : '#links',

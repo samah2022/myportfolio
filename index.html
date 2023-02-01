@@ -14,10 +14,10 @@
   </head>
   <body>
     <!--Start NavBar-->
-    <nav class="navbar flex-align-items-center justify-content-center d-none d-sm-flex">
+    <nav class="navbar flex-align-items-center justify-content-center">
         <div class="max-width">
             <div class="logo"><a href="#">Sa<span>mah.</span></a></div>
-            <ul class="menu mt-3">
+            <ul class="menu mt-3 d-none d-md-block">
                 <li><a id="linkHomepage" href="#" class="menu-btn">Home</a></li>
                 <li><a id="linkAbout" href="#about" class="menu-btn">About</a></li>
                 <li><a id="linkSkills" href="#skills" class="menu-btn">Skills</a></li>
@@ -32,7 +32,10 @@
     </nav>
     <!--End NavBar-->
     <section class="container-inner"> 
-    <div class="background"></div> 
+    <div class="background"></div>
+    <div id="container-intro">
+        <center><span class="text-intro d-block d-md-none">Please Scroll to show my Portfolio!</span></center>
+    </div>
     <!--Start About Section-->
     <section id="about" class="wrapper">
         <p class="text-byline">My name is <br><span class="myname">Samah Filali</span></p>
