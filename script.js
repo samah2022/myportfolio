@@ -27,7 +27,7 @@ $("#linkContactMe").click(function() {
 });
 $("#DevelopedBy").click(function() {
   $('html, body').animate({
-      scrollTop:5850}, 50);
+      scrollTop:5820}, 50);
 });
 (function() {
   $(function() {
@@ -134,7 +134,7 @@ $("#DevelopedBy").click(function() {
             'animations' :  [
               {
                 'selector'    : '#footer p',
-                'translateY'  : '-90%',
+                'translateY'  : '-100%',
                 'opacity'     : [0, 1] 
               }]},{
             'wrapper' : '#links',
