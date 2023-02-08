@@ -1,0 +1,456 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link href="./css/custom.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://kit.fontawesome.com/d9973f5636.js" crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <style>
+            *{
+                line-height: 33px;
+            }
+            body{
+                margin-top: -100px;
+                font-size: 20px;
+                border: 1px solid #4e5ed3;
+            }
+            body * {
+            font-family: 'Work Sans', sans-serif;
+            word-break: break-word;
+            /*color:#363636;*/
+        }
+        .title{
+            margin-top: 30px;
+            color: #fff !important;
+            font-size: 40px;
+        }
+        .ProfileHeaderContainer 
+        {
+            background-color: #000;
+            height: 273px;
+            width: 100vw;
+            z-index: 0;
+            padding: 70px 0;
+        }
+        .ProfileIMG {
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            background-image: url('https://media.licdn.com/dms/image/C4D03AQHEyx_vWcNwTQ/profile-displayphoto-shrink_800_800/0/1656264266222?e=2147483647&v=beta&t=6OZMVxvxNQnfmGdPGDwPClfXlY-fZMhVWzlqegP2LIY');
+            background-size: contain;
+            border-radius: 50%;
+            border:10px solid #fff;
+            margin:10px 10px;
+            z-index: 1;
+        
+        }
+        .container-fluid{
+            padding-top: 20px;
+        }
+        .gray{
+            background-color:#f3f4f5;
+        }
+
+        h2 {
+            color:#464646;
+            margin-bottom:30px;
+            font-weight: 500;
+
+        }
+        i {
+            color:#000;
+            padding-right:10px;
+        }
+        a {
+            text-decoration: none;
+            color:#464646;
+            }
+        .contact{
+            border: 1px solid;
+            padding: 20px;
+            line-height: 32px;
+        }
+        .LeftHeader,
+        .RightHeader{
+            margin-top:40px;
+            margin-bottom:100px;
+        
+        }
+        .GoldenBadge {
+            background-color: #f0ae12;
+            padding:5px 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        .Education  .GoldenBadge {
+            margin-top:20px;
+            
+            
+        }
+        .skills{
+            font-weight: 500;
+            max-width: 360px;
+            min-width: 310px !important;
+            
+            line-height: 32px;
+        }
+        .GrayDot{
+            color:#e1e1e1;
+        }
+        h1 {
+            margin-top:130px;
+            font-weight: 600;
+            font-size:60px;
+        }
+        .RightSideContainer {
+            margin-left:100px;
+            max-width: 440px;
+        
+        }
+
+        .surname {
+            color:#f0ae12;;
+        }
+        .subtitle{
+            background: #fff;
+            color: #000;
+            width: 260px;
+            margin: 10px;
+            font-size: 26px;
+            clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
+        }
+        .about {
+            margin-top:108px;
+            max-width: 600px;
+        }
+        .WorkExperience h5 {
+            margin-top:20px;
+        }
+        .Hobies .rowCont {
+        margin-top:30px;
+        display: flex;
+            flex-direction: row;
+        justify-content: space-between;
+        max-width: 400px;
+        }
+        .Hobies .rowCont div {
+            width: 50%;
+        }
+        .skills i {
+            padding:1px;
+        }
+        @media only screen and (max-width: 1217px) {
+        .LeftSideContainer,
+        .RightSideContainer  {
+            margin-left: 10px;
+            max-width: 440px;
+        }
+        .title{
+            font-size: 30px;
+        }
+
+        .skills {
+            padding-right:15px;
+        }
+        }
+
+        @media only screen and (max-width: 374px) {
+            .ProfileIMG {
+                margin-left:30px;
+            }
+            .LeftSideContainer,
+            .RightSideContainer  {
+                margin-left: 3px;
+            }
+
+        }
+        #pinIcon {
+            padding-left: 2px;
+            padding-right: 12px;
+            
+        }
+        .skills .float-end {
+            padding-right: 8px;
+            
+        }
+        /*start timeline*/
+        ul, li{
+        list-style: none;
+        padding: 0;
+        }
+
+        h1{
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        }
+        h5{
+            font-size: 1rem;
+        }
+        .timeline{
+        margin-top: 2rem;
+        border-radius: 12px;
+        position: relative;
+        }
+        .timeline li{
+        padding-bottom: 1.5rem;
+        border-left: 1px solid #abaaed;
+        position: relative;
+        padding-left: 20px;
+        margin-left: 10px;
+        }
+        .timeline li:last-child{
+            border: 0px;
+            padding-bottom: 0;
+        }
+        .timeline li:before{
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: white;
+            border: 1px solid #4e5ed3;
+            box-shadow: 3px 3px 0px #bab5f8;
+            box-shadow: 3px 3px 0px #bab5f8;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: 0px;
+        }
+        .time{
+        color: #2a2839;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        
+        }
+        p{
+        color: #4f4f4f;
+            font-family: sans-serif;
+        line-height: 1.5;
+        margin-top:0.4rem;
+        
+        }
+        /*End timeline*/
+        
+        .progress-bar {
+            background-image: linear-gradient(90deg,#4e5ed3, #bab5f8);
+            background-color:#4e5ed3;
+            border: 1px solid #bab5f8
+        }
+        </style>
+    </head>
+
+    <body>
+        <!--Star Header CV-->
+        <div class="ProfileHeaderContainer">
+            <div class="ProfileIMG">
+            </div>
+            <div class="d-flex justify-content-center align-items-center pt-3 mt-3">
+                <h1 class="title"><center>
+                    Samah Filali
+                <div class="subtitle mt-3">Développeur Web</div></center></h1>
+            </div>
+        </div>
+        <!--End Header CV-->
+        <div class="container-fluid gray">
+            <!--Start Part1-->
+            <div class="row">
+                <!--Star LeftSide CV-->
+                <div class="col-6 LeftSideContainer">
+                    <!--Star Bloc Contact me-->
+                    <div class="contact LeftHeader">
+                        <h2>Contact</h2>
+                        <i class="fas fa-briefcase" aria-hidden="true"></i><strong>Portfolio:</strong> <a href="https://timely-platypus-9d00a4.netlify.app/" target="_blank"> https://timely-platypus-9d00a4.netlify.app/</a><br>
+                        <i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email: </strong><a
+                            href="mailto:filali.samah19@gmail.com" target="_blank">filali.samah@gmail.com</a><br>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i> <strong>LinkedIn: </strong><a
+                            href="https://tn.linkedin.com/in/samah-filali-1197981a2" target="_blank">https://tn.linkedin.com/in/samah-filali-1197981a2</a><br>
+                        <i class="fas fa-trophy" aria-hidden="true"></i><strong>cssbattle: </strong><a
+                        href="https://cssbattle.dev/player/samah_filali" target="_blank"> https://cssbattle.dev/player/samah_filali</a><br>
+                        
+                    </div>
+                    <!--End Bloc Contact me-->
+                </div>
+                 <!--Star RightSide CV-->
+                 <div class="col-6 RightSideContainer">
+                    <!--Star Bloc Skills-->
+                    <div class="skills LeftHeader">
+                        <h2>Compétences</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Back-end</h4> 
+                                <h5>Drupal:<h5>
+                                    <div class="progress mb-3">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                                <h5>php:<h5>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                                 <h5>Git:<h5>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                                <h5>NodeJs :<h5>
+                                <div class="progress">
+                                    <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div> 
+                            </div>
+                            <div class="col-6">
+                                <h4>Front-end</h4>
+                                <h5>Html/Css/SASS:<h5>
+                                    <div class="progress mb-3">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                                <h5>Javascript/JQuery:<h5>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                                <h5>GulpJS:<h5>
+                                    <div class="progress">
+                                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                <h5>Bootstrap/Photoshop CS6 :<h5>
+                                <div class="progress">
+                                    <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+  
+                    </div>
+                    <!--End Bloc Skills-->
+                </div>
+            </div>
+            <!--End Part1-->
+            <!--Start Part2-->
+            <div class="row">
+                <!--Star LeftSide CV-->
+                <div class="col-6 LeftSideContainer">
+                    <!--Star Bloc Contact me-->
+                    <div class="experience LeftHeader">
+                        <h2> Expériences Professionnelles</h2>
+                        <ul class="timeline">
+                            <li>
+                                <div class="time">1/09/2020_Aujourd'hui: Symdrik</div>
+                                <p>Poste: Développeur web (Front End)</p>
+                            </li>
+                            <li>
+                                <div class="time">15/04/2019_31/08/2020: Symdrik</div>
+                                <p>Poste: Développeur web (Back End Drupal8).</p>
+                            </li>
+                            <li>
+                                <div class="time">26/02/2018_ 31/07/2018: Universel Web Soft</div>
+                                <p>Poste: Développeur FullStack(ReactJs, NodeJs)</p>
+                            </li>
+                            <li>
+                                <div class="time">1/01/2017_31/01/2017: DevClic</div>
+                                <p>Poste: Développeur Web</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End Bloc Contact me-->
+                </div>
+                 <!--Star RightSide CV-->
+                 <div class="col-6 RightSideContainer">
+                    <!--Star Bloc Skills-->
+                    <div class="training LeftHeader">
+                        <h2>Stage</h2>
+                        <ul class="timeline">
+                            <li>
+                                <div class="time">01/02/2013_ 31/07/2013: CIC(Centre d’Innovation et de Collaboration)</div>
+                                <p>Projet de Fin d’Etude: Conception et développement d’une plateforme pour un contenu pédagogique standardisé 
+                                et interactif pour une plateforme E-learning.</p>
+                            </li>
+                            <li>
+                                <div class="time">01/01/2011_ 08/06/2011: SIVECO(Société de développement et édition des logiciels de maintenance)</div>
+                                <p>Projet de Fin d’Etude:  Conception et Réalisation d’une application web de planification des missions pour des
+                                consultants(UML, JEE5, MVC 2, CSS).</p>
+                            </li>
+                            <li>
+                                <div class="time">01/07/2010_31/08/2010:  ACTEL (Agence Commerciales Tunisie Télécom)</div>
+                                <p>Service clientèle</p>
+                            </li>
+                            <li>
+                                <div class="time">01/06/2009_31/07/2009:  VTL (Société Tunisienne de Vêtements et de Loisir)</div>
+                                <p>Stage ouvrière: Programmation sous Excel (Histogrammes, calculs, programmer des alertes pour les RDV (visites médicales,     
+                                assurance…)</p>
+                            </li>
+                        </ul> 
+                    </div>
+                    <!--End Bloc Skills-->
+                </div>
+            </div>
+            <!--End Part2-->
+            <!--Start Part3-->
+            <div class="row">
+                <!--Star LeftSide CV-->
+                <div class="col-6 LeftSideContainer">
+                    <!--Star Bloc Contact me-->
+                    <div class="training LeftHeader">
+                        <h2>Formations et Certifications</h2>
+                        
+                        <ul class="timeline">
+                            <li>
+                                <div class="time">1/09/2020_Aujourd'hui: Symdrik</div>
+                                <p>Poste: Développeur web (Front End)</p>
+                            </li>
+                            <li>
+                                <div class="time">15/04/2019_31/08/2020: Symdrik</div>
+                                <p>Poste: Développeur web (Back End Drupal8).</p>
+                            </li>
+                            <li>
+                                <div class="time">26/02/2018_ 31/07/2018: Universel Web Soft</div>
+                                <p>Poste: Développeur FullStack(ReactJs, NodeJs)</p>
+                            </li>
+                            <li>
+                                <div class="time">1/01/2017_31/01/2017: DevClic</div>
+                                <p>Poste: Développeur Web</p>
+                            </li>
+                        </ul> 
+                        
+                    </div>
+                    <!--End Bloc Contact me-->
+                </div>
+                    <!--Star RightSide CV-->
+                    <div class="col-6 RightSideContainer">
+                        <div class="row">
+                            <!--Star Bloc Skills-->
+                            <div class="col-12 skills LeftHeader">
+                                <h2>Centres d'intérêt</h2>
+                                Sports/ Voyage / Artisanat / Musique/ Nature 
+                            </div>
+                            <!--End Bloc Skills-->
+                            <!--Star Bloc Langues-->
+                            <div class="col-12 skills LeftHeader">
+                                <h2>Langues</h2>
+                                <ul>
+                                    <li>
+                                        <strong>Arabe :</strong>Langue Maternelle
+                                    </li>
+                                    <li>
+                                        <strong>Anglais :</strong>Intermédiaire
+                                    </li>
+                                    <li>
+                                        <strong>Francais :</strong>Courant
+                                    </li>
+                                    <li>
+                                        <strong>Allemand :</strong>Notions
+                                    </li>
+                            </div>
+                            <!--End Bloc Langues-->
+                        </div>
+                </div>
+            </div>
+            <!--End Part3-->
+        </div>        
+    </body>
+</html>
