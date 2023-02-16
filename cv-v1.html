@@ -15,13 +15,6 @@
                 font-size: 20px;
                 border: 1px solid #4e5ed3;
             }
-            @media (max-width: 992px) {
-                body{
-                    padding: 10px;
-                    background-color: #f3f4f5;
-                }
-            
-            }
             body * {
             font-family: 'Work Sans', sans-serif;
             word-break: break-word;
@@ -42,7 +35,7 @@
         }
         .ProfileIMG {
             position: absolute;
-            top: 0;
+            top:0;
             width: 150px;
             height: 150px;
             background-image: url('https://media.licdn.com/dms/image/C4D03AQHEyx_vWcNwTQ/profile-displayphoto-shrink_800_800/0/1656264266222?e=2147483647&v=beta&t=6OZMVxvxNQnfmGdPGDwPClfXlY-fZMhVWzlqegP2LIY');
@@ -55,6 +48,9 @@
         }
         .container-fluid{
             padding-top: 20px;
+        }
+        .gray{
+            background-color:#f3f4f5;
         }
 
         h2 {
@@ -69,15 +65,12 @@
         }
         a {
             color:#4e5ed3;
-            line-height:36px
-            }
+            line-height:39px
+        }
         .contact{
             border: 1px solid;
             padding: 20px;
             line-height: 32px;
-        }
-        .timeline li:hover:before{
-          background-color:#bab5f8
         }
         .LeftHeader,
         .RightHeader{
@@ -114,6 +107,7 @@
             font-size:60px;
         }
         .RightSideContainer {
+            margin-left:100px;
             max-width: 440px;
         
         }
@@ -129,12 +123,6 @@
             font-size: 26px;
             padding:8px;
             clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
-        }
-        @media(max-width:600px){
-          h1.title * {
-            font-size: 20px;
-            margin-left: 70px;
-          }
         }
         .about {
             margin-top:108px;
@@ -157,9 +145,13 @@
             padding:1px;
         }
         @media only screen and (max-width: 1217px) {
-    
+        .LeftSideContainer,
+        .RightSideContainer  {
+            margin-left: 10px;
+            max-width: 440px;
+        }
         .title{
-            font-size: 25px;
+            font-size: 30px;
         }
 
         .skills {
@@ -248,11 +240,6 @@
             background-color:#4e5ed3;
             border: 1px solid #bab5f8
         }
-        .grid{
-            display: grid;
-            grid-template-columns: 1fr 4fr;
-            gap: 10px;
-      }
         </style>
     </head>
 
@@ -261,52 +248,38 @@
         <div class="ProfileHeaderContainer">
             <div class="ProfileIMG">
             </div>
-            <div class="d-flex justify-content-center align-items-center pt-3 mt-3">
+            <div class="d-flex justify-content-center align-items-center pt-3">
                 <h1 class="title"><center>
                     Samah Filali
                 <div class="subtitle mt-3">Développeur Web</div></center></h1>
             </div>
         </div>
         <!--End Header CV-->
-        <div class="container-fluid">
+        <div class="container-fluid gray">
             <!--Start Part1-->
             <div class="row">
                 <!--Star LeftSide CV-->
-                <div class="col-md-6 LeftSideContainer">
+                <div class="col-6 LeftSideContainer">
                     <!--Star Bloc Contact me-->
                     <div class="contact LeftHeader">
                         <h2>Contact</h2>
-                        <div class="grid">
-                            <div>
-                                <i class="fas fa-briefcase" aria-hidden="true"></i><strong>Portfolio</strong>
-                            </div> 
-                            <a href="https://timely-platypus-9d00a4.netlify.app/" target="_blank"> https://timely-platypus-9d00a4.netlify.app/</a>
-                            <div>
-                                <i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email </strong>
-                            </div>
-                            <a href="mailto:filali.samah19@gmail.com" target="_blank">filali.samah19@gmail.com</a>
-                            <div>
-                                <i class="fab fa-linkedin-in" aria-hidden="true"></i> <strong>LinkedIn </strong>
-                            </div>
-                            <a href="https://tn.linkedin.com/in/samah-filali-1197981a2" target="_blank">https://tn.linkedin.com/in/samah-filali-1197981a2</a>
-                            <div>
-                                <i class="fab fa-codepen" aria-hidden="true"></i><strong>Codepen </strong>
-                            </div>
-                            <a href="https://codepen.io/samah2022" target="_blank">https://codepen.io/samah2022</a>
-                            <div>
-                                <i class="fab fa-github" aria-hidden="true"></i><strong>Github </strong>
-                            </div>
-                            <a href="https://github.com/samah2022" target="_blank"> https://github.com/samah2022</a>
-                            <div>
-                                <i class="fas fa-trophy" aria-hidden="true"></i><strong>CssBattle: </strong>
-                            </div>
-                            <a href="https://cssbattle.dev/player/samah_filali" target="_blank"> https://cssbattle.dev/player/samah_filali</a>
-                        </div>
+                        <i class="fas fa-briefcase" aria-hidden="true"></i><strong>Portfolio</strong> <a href="https://timely-platypus-9d00a4.netlify.app/" target="_blank"> https://timely-platypus-9d00a4.netlify.app/</a><br>
+                        <i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email </strong>
+                        <a href="mailto:filali.samah19@gmail.com" target="_blank">filali.samah19@gmail.com</a><br>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i> <strong>LinkedIn: </strong>
+                        <a href="https://tn.linkedin.com/in/samah-filali-1197981a2" target="_blank">https://tn.linkedin.com/in/samah-filali-1197981a2</a><br>
+                        <i class="fab fa-codepen" aria-hidden="true"></i><strong>Codepen </strong>
+                        <a href="https://codepen.io/samah2022" target="_blank">https://codepen.io/samah2022</a><br>
+                        <i class="fab fa-github" aria-hidden="true"></i><strong>Github </strong>
+                        <a href="https://github.com/samah2022" target="_blank"> https://github.com/samah2022</a><br>
+                        <i class="fas fa-trophy" aria-hidden="true"></i><strong>cssbattle: </strong><a
+                        href="https://cssbattle.dev/player/samah_filali" target="_blank"> https://cssbattle.dev/player/samah_filali</a><br>
+                        
                     </div>
                     <!--End Bloc Contact me-->
                 </div>
                  <!--Star RightSide CV-->
-                 <div class="col-md-6 RightSideContainer">
+                 <div class="col-6 RightSideContainer">
                     <!--Star Bloc Skills-->
                     <div class="skills LeftHeader">
                         <h2>Compétences</h2>
